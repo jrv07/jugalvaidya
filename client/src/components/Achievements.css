@@ -1,0 +1,80 @@
+/* src/components/Achievements.css */
+.achievements {
+    padding: 2rem;
+    background: #f9f9f9; /* Matches Home/Contact/Blog */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .achievements h2 {
+    font-size: 2rem;
+    color: #333; /* Matches theme */
+    margin-bottom: 2rem;
+  }
+  
+  .achievements-container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .achievement-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .achievement-category h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .achievement-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .achievement-item h4 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .achievement-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  .year {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .achievements {
+      padding: 1rem;
+    }
+  
+    .achievements h2 {
+      font-size: 1.5rem;
+    }
+  
+    .achievement-category {
+      padding: 1rem;
+    }
+  
+    .achievement-item h4 {
+      font-size: 1.1rem;
+    }
+  }

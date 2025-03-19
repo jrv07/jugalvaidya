@@ -1,0 +1,88 @@
+/* src/components/Home.css */
+.home {
+    padding: 2rem;
+    background: #f9f9f9; /* Matches Contact/Blog */
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid #333; /* Matches theme */
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Responsive wrapping */
+  }
+  
+  .cta-buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: #333; /* Matches navbar/footer */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-buttons button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .cta-buttons button:hover {
+    background: #555;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home {
+      padding: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }

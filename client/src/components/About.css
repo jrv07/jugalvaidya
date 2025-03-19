@@ -1,0 +1,118 @@
+/* src/components/About.css */
+.about {
+    padding: 2rem;
+    background: #f9f9f9; /* Matches Home/Achievements */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    color: #333; /* Matches theme */
+    margin-bottom: 2rem;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .experience-item h4 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .period {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+    margin: 0.25rem 0;
+  }
+  
+  .experience-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .skills-list,
+  .hobbies-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .skills-list li,
+  .hobbies-list li {
+    background: #333; /* Matches theme */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .download-cv {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .download-cv:hover {
+    background: #555;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about {
+      padding: 1rem;
+    }
+  
+    .about h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section {
+      padding: 1rem;
+    }
+  
+    .experience-item h4 {
+      font-size: 1.1rem;
+    }
+  
+    .skills-list,
+    .hobbies-list {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
